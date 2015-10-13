@@ -1,5 +1,7 @@
 install:
-	ln -s latexmk.pl /usr/local/bin/latexmk
+	ln -svf latexmk.pl /usr/local/bin/latexmk
 
 uninstall:
-	rm -v /usr/local/bin/latexmk
+	rm -vf /usr/local/bin/latexmk
+
+.PHONY: install uninstall
